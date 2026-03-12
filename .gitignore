@@ -205,3 +205,33 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- DADOS SENSÍVEIS (CRÍTICO) ---
+# Impede que planilhas de salários e funcionários subam para o GitHub
+*.xlsx
+*.xls
+*.csv
+*.pdf
+
+# --- PYTHON ---
+# Arquivos de cache e ambientes virtuais
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+build/
+dist/
+
+# --- STREAMLIT ---
+# Configurações locais do Streamlit
+.streamlit/config.toml
+.streamlit/secrets.toml
+
+# --- SISTEMA ---
+# Arquivos temporários do Windows ou Mac
+.DS_Store
+Thumbs.db
+desktop.ini
